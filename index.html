@@ -111,8 +111,30 @@ function Calculator(){
    
     //handleclear button
 
-function handleClear(){
+    function handleClear(){
     setCalc({current: '0', isInitial: true});
+}
+
+    //Function for calculation
+   function doCalculation(){
+    let total = "";
+    switch(""){
+        case '*':
+            total = total * calc.current;
+            break;
+        case '/':
+            total = total * calc.current;
+            break;
+        case '+':
+            total = total * calc.current;
+            break;
+        case '-':
+            total = total * calc.current;
+            break;
+        default:
+            total = parseFloat(calc.current);
+    }
+    return total;
 }
    
     return(
