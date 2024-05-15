@@ -155,22 +155,23 @@ function Calculator(){
             <CalcButton onClick={handleNumber} value='7'/>
             <CalcButton onClick={handleNumber} value='8'/>
             <CalcButton onClick={handleNumber} value='9'/>
-            <CalcButton className="operator" value="+"/>
+            <CalcButton className="operator" value="+" onClick={handleOperator}/>
+
 
             <CalcButton onClick={handleNumber} value='4'/>
             <CalcButton onClick={handleNumber} value='5'/>
             <CalcButton onClick={handleNumber} value='6'/>
-            <CalcButton className="operator" value="-"/>
+            <CalcButton className="operator" value="-" onClick={handleOperator}/>
 
             <CalcButton onClick={handleNumber} value='1'/>
             <CalcButton onClick={handleNumber} value='2'/>
             <CalcButton onClick={handleNumber} value='3'/>
-            <CalcButton className="operator" value="/"/>
+            <CalcButton className="operator" value="/" onClick={handleOperator}/>
 
             <CalcButton value="C"onClick={handleClear}/>
             <CalcButton onClick={handleNumber} value='0'/>
-            <CalcButton className="operator" value="="/>
-            <CalcButton className="operator" value="*"/>
+            <CalcButton className="operator" value="=" onClick={handleOperator}/>
+            <CalcButton className="operator" value="*" onClick={handleOperator}/>
         </div>
     );
 }
